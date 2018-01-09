@@ -1,6 +1,9 @@
 <?php
 namespace Bredi\Upload\Upload;
 
+use File;
+use Intervention\Image\Facades\Image;
+
 class Upload
 {
     public function get()

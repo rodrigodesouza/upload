@@ -16,5 +16,22 @@
         "files": ["app/Helpers/Helper.php"]
     },
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "php": ">=5.6",
+        "illuminate/support": "4.2.*|5.*",
+        "owen-it/laravel-auditing": "^4.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bredi\\Upload\\UploadServiceProvider",
+                "Intervention\\Image\\ImageServiceProvider",
+                
+            ],
+            "aliases": {
+                "Upload": "Bredi\\Upload\\Facade",
+                "Image": "Intervention\\Image\\Facades\\Image"
+            }
+        }
+    }
 }
