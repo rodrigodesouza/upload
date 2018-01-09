@@ -27,7 +27,7 @@
                 "Intervention\\Image\\ImageServiceProvider"
             ],
             "aliases": {
-                "Upload": "Bredi\\Upload\\Facade",
+                "Upload": "Bredi\\Upload\\Upload\\Facade",
                 "Image": "Intervention\\Image\\Facades\\Image"
             }
         }
