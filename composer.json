@@ -3,7 +3,8 @@
     "description": "upload de imagens e arquivos",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "rodrigo souza",
@@ -13,8 +14,7 @@
     "autoload": {
         "psr-4": {
             "Bredi\\Upload\\": "src/"
-        },
-        "files": ["app/Helpers/Helper.php"]
+        }
     },
     "require": {
         "php": ">=5.6",
