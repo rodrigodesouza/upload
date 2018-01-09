@@ -1,0 +1,20 @@
+{
+    "name": "bredi/upload",
+    "description": "upload de imagens e arquivos",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rodrigo souza",
+            "email": "rd7.rodrigo@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Bredi\\Upload\\": "src/"
+        },
+        "files": ["app/Helpers/Helper.php"]
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
