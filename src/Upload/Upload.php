@@ -1,7 +1,7 @@
 <?php
 namespace Bredi\Upload\Upload;
 
-use File;
+use Illuminate\Support\Facades\File;
 use Intervention\Image\Facades\Image;
 
 class Upload
@@ -32,11 +32,11 @@ class Upload
             if (is_array($imagens)) {
                 foreach ($imagens as $imagem) {
 
-                    array_push($returnImages, ImagemUpload::enviaImagem($imagem, $destinos, $white, $background));
+                    array_push($returnImages, Upload::enviaImagem($imagem, $destinos, $white, $background));
 
                 }
             } else {
-                $returnImages = ImagemUpload::enviaImagem($imagens, $destinos, $white, $background);
+                $returnImages = Upload::enviaImagem($imagens, $destinos, $white, $background);
 
             }
 
