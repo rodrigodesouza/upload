@@ -1,0 +1,20 @@
+- Colocar uniqid no nome das imagens
+- Deixar a resolução opcional - apenas mover a imagem se não existir a resolução
+- resolucao: deixar opcional os tamanhos das imagens. Mover apenas
+- Criar um arquivo config.php pra setar o caminho original a ser salvo poex e: storage_path().'public'...
+deixar alternativa pra modifica.
+- colocar uma opçao de enviar para a pasta padrão ou não.
+- colocar no config a opção de um prefixo personalizado ex:
+
+'prefixo' => 'assets' //url:http://meusite.com/assets/banner/g/minhaimagem.jpg
+    
+    public function __construct()
+    {
+        herda o _construct de PermissaoController para gerir as permissões
+        parent::__construct();
+
+        $this->destino = [
+            'caminho'   => storage_path() . '/app/public/pasta-destino/', substituir por 'pasta-destino';
+            'resolucao' => ['p' => [150, 150], 'm' => [500, 500], 'g' => [1024, 1024], 'n'...],
+        ];
+    }

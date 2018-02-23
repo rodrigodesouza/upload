@@ -74,6 +74,7 @@ class Upload
 
                     if (!File::exists($pasta['caminho'])) {
                         $result = File::makeDirectory($pasta['caminho'], 0777, true);
+                        File::put($pasta['caminho'] . '.gitignore', '* !.gitignore');
                     }
 
                     $img->save($pasta['caminho'] . $novoNome);
